@@ -75,3 +75,246 @@ p{
 
 /* header css end  */
 
+
+     /* features section css start  */
+
+.features-container {
+    margin: 4% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.features-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.features-banner img {
+    width: 100%;
+}
+
+.features-details{
+    padding: 30% 0%;
+}
+
+.features-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#silver {
+    color: #727272;
+}
+#orange {
+    color: #FF900E;
+}
+.features-description{
+    color: #727272;
+    margin: 20px 0;
+}
+/* features section css end  */
+
+/* company features section css start  */
+
+.company-features-container{
+    margin: 4% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 110px;
+}
+
+.company-features-title{
+    font-size: 25px;
+    font-weight: 600;
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.company-features{
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.company-features-banner{
+    position: relative;
+}
+.company-features-banner img {
+    width: 100%;
+}
+.experience-box {
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    position: absolute;
+    bottom: -40px;
+    left: -80px;
+}
+/* company features section css end  */
+/* some facts section css start  */
+
+.facts-container{
+    margin: 5% 10%;
+}
+.facts-title{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.works-history{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work{
+    padding: 35px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+/* some facts section css end  */
+
+
+/* sponsors section css start  */
+
+.sponsors-container{
+    margin: 5% 10%;
+    text-align: center;
+}
+.sponsors-title{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.sponsors-description{
+    margin-bottom: 30px;
+}
+.sponsors-company{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sponsors-logo img {
+    filter: grayscale(100%);
+}
+/* sponsors section css end  */
+
+
+/* footer section css start  */
+
+.footer-container{
+    margin: 10%;
+}
+.footer-title{
+    text-align: center;
+    padding: 25px 0;
+    background-color: #FFF4E7;
+}
+
+/* footer section css end  */
+
+/* our clients feedback section  css start  */
+.feedback-container{
+    margin: 4% 10%;
+}
+
+.feedback-title{
+    font-size: 35px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.single-feedback{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.feedback{
+    padding: 20px;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+}
+.feedback-description{
+    margin: 25px 0;
+}
+
+.clients-name{
+    margin-bottom: 20px;
+}
+.fa-solid{
+    color: gold;
+}
+.fa-regular{
+    color: gold;
+}
+
+/* our clients feedback section  css start  */
+
+
+
+/* =================================================================================
+   =================================================================================
+
+                       Media Query for Mobile Device
+
+  =================================================================================
+  ================================================================================= */
+
+
+@media screen and (max-width: 576px) {
+    .navbar-container{
+        padding: 20px 10px;
+    }
+    .navbar-title > h3 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .navbar-items > a {
+        margin-left: 15px;
+    }
+
+    .features-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-details{
+        padding: 0 0 20px 0;
+    }
+    .company-features-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    .company-features-banner{
+        position: relative;
+    }
+    .experience-box {
+        position: static;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .works-history{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .sponsors-company{
+        flex-wrap: wrap;
+    }
+    .single-feedback{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
